@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+{% block title %}
+Blogs
+{% endblock %}
+
+{% block css_files %}
+   <link rel="stylesheet" href="{% static "css/index.css" %}"/>
+   <link rel="stylesheet" href="{% static "css/post.css" %}"/>
+   <link rel="stylesheet" href="{% static "css/all-posts.css" %}"/>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<section id="welcome">
+   <header>
+      <img src="{% static "img/garp.jpg" %}" alt="Ahmed - The author of this blog " />
+      <h2>AHMED'S Blog</h2>
+   </header>
+
+   <p>Hi, i'm ahmed </p>
+
+</section>
+
+<section id="latest-posts">
+   <h2>My Latest Thoughts</h2>
+   <ul>
+      {% for post in posts %}
+        {% include "blog/includes/post.html" %}
+      {% endfor %}
+      
+   </ul>
+</section>
+
+<section id="about">
+   <h2>What I do</h2>
+   <p>I love programming, I love help other and i enjoy exploring new technologies in general! </p>
+   <p>
+      My goal is very nice!
+   </p>
+
+</section>
+
+{% endblock %}
