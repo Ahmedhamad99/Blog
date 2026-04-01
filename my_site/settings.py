@@ -29,7 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "blog-eta-nine-twhv3m4lse.vercel.app",
-    "blog-iu80ns1ko-ahmeds-projects-253e0a20.vercel.app"
+    "blog-iu80ns1ko-ahmeds-projects-253e0a20.vercel.app",
+    
 ]
 
 
