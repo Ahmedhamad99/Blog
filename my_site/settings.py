@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from os import getenv
+
+import blog
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +27,9 @@ SECRET_KEY = 'django-insecure-9dt$ovyzk10x7a+p1lu%r^rv%hx*tugv4(f$(hucn04s5x^8n5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = getenv("ALLOWED_HOSTS", "").split(",")
-
+ALLOWED_HOSTS = [
+    "blog-eta-nine-twhv3m4lse.vercel.app"
+]
 
 
 # Application definition
