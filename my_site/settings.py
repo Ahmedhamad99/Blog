@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 from os import getenv
 
-import blog
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,7 +29,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "blog-eta-nine-twhv3m4lse.vercel.app",
     "blog-iu80ns1ko-ahmeds-projects-253e0a20.vercel.app",
-    
 ]
 
 
